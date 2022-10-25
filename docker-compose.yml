@@ -1,0 +1,12 @@
+version: "3.9"
+
+services:
+  tailwind:
+    build: .
+    image: tailwind
+    container_name: tailwind
+    command: npm run dev
+    ports:
+      - "3000:3000"
+    volumes:
+      - .:/opt/code
